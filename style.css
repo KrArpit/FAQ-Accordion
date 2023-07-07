@@ -16,16 +16,16 @@ body{
     justify-content: center;
 }
 .faq-container{
-    width: 500px;
-    height: 250px;
+    width: 900px;
+    height: 500px;
     border-radius: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #ffffff;
     background-image: url(/images/bg-pattern-desktop.svg);
-    background-size: 450px;
+    background-size: 800px;
     background-repeat: no-repeat;
-    background-position: -500% 68%;
+    background-position: -400% 68%;
 }
 .left-section{
     position: relative;
@@ -33,36 +33,40 @@ body{
 .left-section-inner{
     background: url(/images/illustration-woman-online-desktop.svg);
     height: 100%;
-    background-size: 250px; 
+    /* background-size: 650px;  */
     background-repeat: no-repeat;
-    background-position: -40px 40%;
+    background-position: -80px 40%;
 }
 .box{
     position: absolute;
     top: 35%;
     right: 85%;
-    width: 110px;
+    /* width: 110px; */
     filter: drop-shadow( 0px 8px 10px rgba(0, 0, 0, 0.4));
 }
 .right-section{
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
 }
 .faq-list{
-    padding: 10px 50px 30px 0px;
+    padding: 0px 80px 30px 0px;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 .faq-item{
     border-bottom: 1px solid hsl(240, 5%, 91%);
-    padding: 0.5rem 0rem 0.5rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
+}
+.faq-heading{
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 .faq-item .question{
     display: flex;
     justify-content: space-between;
-    font-size: 9px;
+    font-size: 15px;
     color:hsl(237, 12%, 33%);
     font-weight: 500;
     cursor: pointer;
@@ -72,14 +76,14 @@ body{
 }
 .arrow{
     align-self: center;
-    width: 7px;
+    width: 9px;
 }
 .faq-item .answer{
     display: none;
 }
 .active .answer{
     display: block;
-    font-size: 8px;
+    font-size: 14px;
     padding-top: 6px;
     color:hsl(240, 6%, 50%);
 }
