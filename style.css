@@ -70,6 +70,7 @@ body{
     color:hsl(237, 12%, 33%);
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 .faq-item .question:hover{
     color:  hsl(14, 88%, 65%);
@@ -89,4 +90,12 @@ body{
 }
 .active span{
     font-weight: 700;
+}
+.active .question:hover{
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+}
+.active .arrow{
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
 }
