@@ -9,7 +9,7 @@ body{
     font-size: 12px;
     width: 100vw;
     height: 100vh;
-    background:linear-gradient(hsl(240, 73%, 65%),hsl(273, 75%, 66%)) ;
+    background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%)) ;
     background-repeat: no-repeat;
     display: grid;
     align-items: center;
@@ -29,6 +29,9 @@ body{
 }
 .left-section{
     position: relative;
+}
+.mobile-img{
+    display: none;
 }
 .left-section-inner{
     background: url(/images/illustration-woman-online-desktop.svg);
@@ -98,4 +101,48 @@ body{
 .active .arrow{
     transform: rotate(180deg);
     transition: all 0.3s ease-in;
+}
+/* MEDIA SCREEN SIZE LESS THAN 700PX */
+@media only screen and (max-width:700px) {
+    .faq-container{
+        width: 350px;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-image: url(./images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 35px 0px;
+        background-size: 280px;
+        height: 550px;
+        padding: 1.5rem;
+    }
+    .left-section{
+        position: relative;
+    }
+    .mobile-img{
+        display: inline-block;
+        position: absolute;
+        top: -140px;
+        right: 28px;
+        width: 250px;
+    }
+    .left-section-inner{
+        background-image: none;
+    }
+    .box{
+        display: none;
+    }
+    .right-section{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .faq-list{
+        padding: 0px;
+    }
+    .faq-heading{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .faq-item{
+        width: 100%;
+    }
 }
